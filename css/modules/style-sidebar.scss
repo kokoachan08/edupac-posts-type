@@ -1,0 +1,52 @@
+ /* Default styles */
+#wrapper #sidebar-wrapper {
+    width: 350px;
+    transition: all 0.3s ease; /* Smooth transition untuk lebar */
+}
+
+#wrapper #navbar-wrapper {
+    min-height: 67px;
+}
+
+#wrapper #sidebar-wrapper #toc {
+    width: 250px;
+}
+
+#wrapper #main-wrapper {
+    transition: margin-left 0.3s ease;
+}
+
+#wrapper.toggled #main-wrapper {
+    width: 30%; /* Menyesuaikan dengan lebar sidebar */
+    margin-left: 0; /* Konten utama full width saat sidebar ditutup */
+    transition: width 0.3s ease; /* Smooth transition untuk lebar */
+}
+
+#wrapper.toggled #main-wrapper #apply-button {
+    display: none;
+}
+
+#wrapper:not(.toggled) #main-wrapper {
+    width: 100% !important;
+}
+
+#content-wrapper {
+    padding: 15px;
+    transition: margin-left 0.5s ease;
+    overflow-x: hidden; // Tambahkan ini
+}
+
+/* Responsive for desktop */
+@media (min-width: 768px) {
+    #wrapper #main-wrapper {
+        width: auto; /* Menyesuaikan dengan sidebar */
+    }
+
+    #wrapper.toggled #main-wrapper {
+        width: 100% !important;
+    }
+
+    #wrapper.toggled #main-wrapper #apply-button {
+        display: block;
+    }
+}

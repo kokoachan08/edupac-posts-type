@@ -1,0 +1,96 @@
+summary{
+    font-size:15px;
+}
+summary:hover{
+    color: #f2c500;
+}
+summary h3:active{
+    color: #f2c500;
+}
+
+details[open] summary{
+    color: #f2c500;
+}
+
+@media (min-width: 360px) and (max-width: 511px) and (orientation: portrait) {
+    .search-screen{
+        margin-top: -70% !important;
+        font-size: 25px;
+        line-height: 35px;
+    }
+}
+
+@media (min-width: 512px) and (max-width: 991px) and (orientation: portrait) {
+    .search-screen{
+        margin-top: -45% !important;
+        font-size: 25px;
+        line-height: 35px;
+    }
+}
+
+
+
+@media (min-width: 667px) and (max-width: 739px) and (orientation: landscape) {
+    .search-screen{
+        margin-top: -40% !important;
+        font-size: 25px;
+        line-height: 35px;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 915px) and (orientation: landscape) {
+    .search-screen{
+        margin-top: -35% !important;
+        font-size: 25px;
+        line-height: 35px;
+    }
+}
+
+@media (min-width: 992px) {
+    .search-screen{
+        margin-top: -25% !important;
+    }
+}
+
+
+.nav-tabs .nav-link {
+    border-radius: 0 !important; /* Hilangkan sudut melengkung */
+}
+
+.nav-tabs .nav-link.active {
+    color: black !important; /* Ubah warna teks menjadi hitam saat aktif */
+    background-color: lightblue !important;
+}
+
+.nav-tabs .nav-link {
+    display: flex;
+    flex-direction: column; /* Atur elemen menjadi vertikal */
+    align-items: center; /* Pusatkan ikon dan teks secara horizontal */
+    justify-content: center; /* Pusatkan secara vertikal */
+}
+
+.nav-tabs .nav-link span {
+    display: block; /* Pastikan elemen teks dan ikon sebagai blok terpisah */
+}
+
+.nav-tabs .nav-link span.dashicons {
+    font-size: 24px; /* Sesuaikan ukuran ikon */
+    margin-bottom: 5px; /* Beri jarak antara ikon dan teks */
+}
+
+/* Styling untuk elemen dalam nav-link */
+.nav-tabs .nav-item .nav-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+/* Styling untuk dashicons */
+.nav-tabs .nav-item .nav-link .dashicons {
+    font-size: 1.2rem; /* Ukuran ikon */
+    margin-right: 0.5rem; /* Memberikan jarak antara ikon dan teks */
+}
+
+.nav-tabs .nav-link:hover {
+    background-color: lightblue !important;
+}

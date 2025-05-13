@@ -1,0 +1,99 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+.error{
+    color: red;
+}
+
+.edu-form-container{
+    width: 100%;
+    background: #fff;
+    padding: 6%;
+    border: 1px solid lightgrey;
+}
+
+.edu-form-content{
+    margin: 0% 0% 3%;
+}
+.edu-form-submit{
+    margin-top: 1%;
+}
+
+.edu-form-content input{
+    padding: 1%;
+    text-align: center;
+}
+
+.edu-form-submit input{
+    width: 100%;
+    padding: 1%;
+    text-align: center;
+}
+
+.edu-form-content select{
+    width: 100%;
+    padding: 2%;
+    color: #808080 !important;
+}
+
+.edu-form-content option{
+    text-align: center;
+}
+
+::placeholder {
+    text-align: center; 
+ }
+ 
+ /* or, for legacy browsers */
+ 
+ ::-webkit-input-placeholder {
+    text-align: center;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    text-align: center;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;  
+ }
+ 
+ :-ms-input-placeholder {  
+    text-align: center; 
+ }
+
+
+.dropdown-menu {
+    width: 100%;
+}
+
+.multiselect-container {
+    width: 100%;
+}
+
+.btn-group{
+    display: flex;
+}
+
+.form-control {
+    width: -webkit-fill-available !important;
+}
+
+
+@media screen and (max-width:1023px){ 
+    .multiselect-container button.dropdown-item {
+      pointer-events:none;
+    }
+    .multiselect-container span.form-check input {
+      pointer-events: all;
+    }
+    .multiselect-container span.form-check label  {
+      pointer-events: none;
+    }
+ }
+
+.form-check-label{
+    text-wrap: pretty !important;
+}

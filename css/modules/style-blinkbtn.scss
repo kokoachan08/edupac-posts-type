@@ -1,0 +1,56 @@
+.blinkbtn  {
+    background-color: #004A7F; /* Warna latar belakang biru */
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 20px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-animation: glowing 1500ms infinite;
+    -moz-animation: glowing 1500ms infinite;
+    -o-animation: glowing 1500ms infinite;
+    animation: glowing 1500ms infinite;
+}
+.blinkbtn:hover{
+    color: black !important;
+}
+  
+@-webkit-keyframes glowing {
+    0% { background-color: #004A7F;} /* Biru */
+    50% { background-color: #0099FF;} /* Biru terang */
+    100% { background-color: #004A7F;} /* Biru */
+}
+
+@-moz-keyframes glowing {
+    0% { background-color: #004A7F;} /* Biru */
+    50% { background-color: #0099FF;} /* Biru terang */
+    100% { background-color: #004A7F;} /* Biru */
+}
+
+@-o-keyframes glowing {
+    0% { background-color: #004A7F;} /* Biru */
+    50% { background-color: #0099FF;} /* Biru terang */
+    100% { background-color: #004A7F;} /* Biru */
+}
+
+@keyframes glowing {
+    0% { background-color: #004A7F;} /* Biru */
+    50% { background-color: #0099FF;} /* Biru terang */
+    100% { background-color: #004A7F;} /* Biru */
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #0495c9;
+    border-color: #357ebd; /*set the color you want here*/
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #00b3db;
+    border-color: #285e8e; /*set the color you want here*/
+}
